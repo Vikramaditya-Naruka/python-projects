@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>new.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #2aacb8;}
+.s4 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+new.py</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">turtle </span><span class="s0">as </span><span class="s1">turtle_module</span>
+<span class="s0">import </span><span class="s1">random</span>
+
+<span class="s1">turtle_module</span><span class="s2">.</span><span class="s1">colormode</span><span class="s2">(</span><span class="s3">255</span><span class="s2">)</span>
+<span class="s1">tim </span><span class="s2">= </span><span class="s1">turtle_module</span><span class="s2">.</span><span class="s1">Turtle</span><span class="s2">()</span>
+<span class="s1">tim</span><span class="s2">.</span><span class="s1">speed</span><span class="s2">(</span><span class="s4">&quot;fastest&quot;</span><span class="s2">)</span>
+<span class="s1">tim</span><span class="s2">.</span><span class="s1">penup</span><span class="s2">()</span>
+<span class="s1">tim</span><span class="s2">.</span><span class="s1">hideturtle</span><span class="s2">()</span>
+
+<span class="s1">color_list </span><span class="s2">= [(</span><span class="s3">232</span><span class="s2">, </span><span class="s3">230</span><span class="s2">, </span><span class="s3">226</span><span class="s2">), (</span><span class="s3">244</span><span class="s2">, </span><span class="s3">226</span><span class="s2">, </span><span class="s3">237</span><span class="s2">), (</span><span class="s3">231</span><span class="s2">, </span><span class="s3">235</span><span class="s2">, </span><span class="s3">243</span><span class="s2">), (</span><span class="s3">228</span><span class="s2">, </span><span class="s3">240</span><span class="s2">, </span><span class="s3">234</span><span class="s2">), (</span><span class="s3">232</span><span class="s2">, </span><span class="s3">159</span><span class="s2">, </span><span class="s3">66</span><span class="s2">), (</span><span class="s3">48</span><span class="s2">, </span><span class="s3">111</span><span class="s2">, </span><span class="s3">154</span><span class="s2">), (</span><span class="s3">116</span><span class="s2">, </span><span class="s3">155</span><span class="s2">, </span><span class="s3">203</span><span class="s2">), (</span><span class="s3">226</span><span class="s2">, </span><span class="s3">200</span><span class="s2">, </span><span class="s3">104</span><span class="s2">), (</span><span class="s3">208</span><span class="s2">, </span><span class="s3">125</span><span class="s2">, </span><span class="s3">165</span><span class="s2">), (</span><span class="s3">21</span><span class="s2">, </span><span class="s3">131</span><span class="s2">, </span><span class="s3">96</span><span class="s2">), (</span><span class="s3">177</span><span class="s2">, </span><span class="s3">164</span><span class="s2">, </span><span class="s3">32</span><span class="s2">), (</span><span class="s3">220</span><span class="s2">, </span><span class="s3">75</span><span class="s2">, </span><span class="s3">110</span><span class="s2">), (</span><span class="s3">12</span><span class="s2">, </span><span class="s3">177</span><span class="s2">, </span><span class="s3">145</span><span class="s2">), (</span><span class="s3">166</span><span class="s2">, </span><span class="s3">48</span><span class="s2">, </span><span class="s3">94</span><span class="s2">), (</span><span class="s3">150</span><span class="s2">, </span><span class="s3">22</span><span class="s2">, </span><span class="s3">60</span><span class="s2">), (</span><span class="s3">226</span><span class="s2">, </span><span class="s3">79</span><span class="s2">, </span><span class="s3">44</span><span class="s2">), (</span><span class="s3">120</span><span class="s2">, </span><span class="s3">175</span><span class="s2">, </span><span class="s3">129</span><span class="s2">), (</span><span class="s3">25</span><span class="s2">, </span><span class="s3">33</span><span class="s2">, </span><span class="s3">80</span><span class="s2">), (</span><span class="s3">40</span><span class="s2">, </span><span class="s3">166</span><span class="s2">, </span><span class="s3">203</span><span class="s2">), (</span><span class="s3">118</span><span class="s2">, </span><span class="s3">109</span><span class="s2">, </span><span class="s3">159</span><span class="s2">), (</span><span class="s3">194</span><span class="s2">, </span><span class="s3">69</span><span class="s2">, </span><span class="s3">39</span><span class="s2">), (</span><span class="s3">164</span><span class="s2">, </span><span class="s3">8</span><span class="s2">, </span><span class="s3">4</span><span class="s2">), (</span><span class="s3">233</span><span class="s2">, </span><span class="s3">168</span><span class="s2">, </span><span class="s3">193</span><span class="s2">), (</span><span class="s3">62</span><span class="s2">, </span><span class="s3">23</span><span class="s2">, </span><span class="s3">60</span><span class="s2">), (</span><span class="s3">30</span><span class="s2">, </span><span class="s3">53</span><span class="s2">, </span><span class="s3">112</span><span class="s2">), (</span><span class="s3">162</span><span class="s2">, </span><span class="s3">208</span><span class="s2">, </span><span class="s3">191</span><span class="s2">), (</span><span class="s3">226</span><span class="s2">, </span><span class="s3">176</span><span class="s2">, </span><span class="s3">167</span><span class="s2">), (</span><span class="s3">182</span><span class="s2">, </span><span class="s3">186</span><span class="s2">, </span><span class="s3">215</span><span class="s2">), (</span><span class="s3">21</span><span class="s2">, </span><span class="s3">100</span><span class="s2">, </span><span class="s3">80</span><span class="s2">), (</span><span class="s3">237</span><span class="s2">, </span><span class="s3">200</span><span class="s2">, </span><span class="s3">10</span><span class="s2">)]</span>
+<span class="s1">tim</span><span class="s2">.</span><span class="s1">setheading</span><span class="s2">(</span><span class="s3">255</span><span class="s2">)</span>
+<span class="s1">tim</span><span class="s2">.</span><span class="s1">forward</span><span class="s2">(</span><span class="s3">300</span><span class="s2">)</span>
+<span class="s1">tim</span><span class="s2">.</span><span class="s1">setheading</span><span class="s2">(</span><span class="s3">0</span><span class="s2">)</span>
+<span class="s1">number_of_dots </span><span class="s2">= </span><span class="s3">100</span>
+
+<span class="s0">for </span><span class="s1">dot_count </span><span class="s0">in </span><span class="s1">range</span><span class="s2">(</span><span class="s3">1</span><span class="s2">,</span><span class="s1">number_of_dots</span><span class="s2">+</span><span class="s3">1</span><span class="s2">):</span>
+    <span class="s1">tim</span><span class="s2">.</span><span class="s1">dot</span><span class="s2">(</span><span class="s3">20</span><span class="s2">,</span><span class="s1">random</span><span class="s2">.</span><span class="s1">choice</span><span class="s2">(</span><span class="s1">color_list</span><span class="s2">))</span>
+    <span class="s1">tim</span><span class="s2">.</span><span class="s1">forward</span><span class="s2">(</span><span class="s3">50</span><span class="s2">)</span>
+
+    <span class="s0">if </span><span class="s1">dot_count </span><span class="s2">% </span><span class="s3">10 </span><span class="s2">== </span><span class="s3">0</span><span class="s2">:</span>
+        <span class="s1">tim</span><span class="s2">.</span><span class="s1">setheading</span><span class="s2">(</span><span class="s3">90</span><span class="s2">)</span>
+        <span class="s1">tim</span><span class="s2">.</span><span class="s1">forward</span><span class="s2">(</span><span class="s3">50</span><span class="s2">)</span>
+        <span class="s1">tim</span><span class="s2">.</span><span class="s1">setheading</span><span class="s2">(</span><span class="s3">180</span><span class="s2">)</span>
+        <span class="s1">tim</span><span class="s2">.</span><span class="s1">forward</span><span class="s2">(</span><span class="s3">500</span><span class="s2">)</span>
+        <span class="s1">tim</span><span class="s2">.</span><span class="s1">setheading</span><span class="s2">(</span><span class="s3">0</span><span class="s2">)</span>
+
+<span class="s1">screen </span><span class="s2">= </span><span class="s1">turtle_module</span><span class="s2">.</span><span class="s1">Screen</span><span class="s2">()</span>
+<span class="s1">screen</span><span class="s2">.</span><span class="s1">exitonclick</span><span class="s2">()</span></pre>
+</body>
+</html>
