@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>main.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #7a7e85;}
+.s1 { color: #bcbec4;}
+.s2 { color: #cf8e6d;}
+.s3 { color: #bcbec4;}
+.s4 { color: #6aab73;}
+.s5 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.py</font>
+</center></td></tr></table>
+<pre><span class="s0"># Draw a triangle , square ,pentagon ,</span>
+<span class="s0">#  hexagon , heptagon , octagon , nonagon and decagon.</span>
+
+<span class="s2">from </span><span class="s1">turtle </span><span class="s2">import </span><span class="s1">Turtle </span><span class="s3">, </span><span class="s1">Screen</span>
+<span class="s2">import </span><span class="s1">random</span>
+<span class="s1">colors </span><span class="s3">=[</span><span class="s4">&quot;gray&quot;</span><span class="s3">,</span><span class="s4">&quot;dark green&quot;</span><span class="s3">,</span><span class="s4">&quot;orange red&quot;</span><span class="s3">,</span><span class="s4">&quot;peru&quot;</span><span class="s3">,</span><span class="s4">&quot;dark magenta&quot;</span><span class="s3">,</span><span class="s4">&quot;dark violet&quot;</span><span class="s3">,</span><span class="s4">&quot;gold&quot;</span><span class="s3">]</span>
+<span class="s1">tim </span><span class="s3">= </span><span class="s1">Turtle</span><span class="s3">()</span>
+<span class="s1">tim</span><span class="s3">.</span><span class="s1">shape</span><span class="s3">(</span><span class="s4">&quot;turtle&quot;</span><span class="s3">)</span>
+<span class="s2">def </span><span class="s1">draw_shape</span><span class="s3">(</span><span class="s1">number_sides</span><span class="s3">):</span>
+
+
+    <span class="s1">angle </span><span class="s3">= </span><span class="s5">360</span><span class="s3">/</span><span class="s1">number_sides</span>
+
+    <span class="s1">tim</span><span class="s3">.</span><span class="s1">color</span><span class="s3">(</span><span class="s1">random</span><span class="s3">.</span><span class="s1">choice</span><span class="s3">(</span><span class="s1">colors</span><span class="s3">))</span>
+    <span class="s2">for </span><span class="s1">i </span><span class="s2">in </span><span class="s1">range</span><span class="s3">(</span><span class="s1">number_sides</span><span class="s3">):</span>
+        <span class="s1">tim</span><span class="s3">.</span><span class="s1">forward</span><span class="s3">(</span><span class="s5">100</span><span class="s3">)</span>
+        <span class="s1">tim</span><span class="s3">.</span><span class="s1">right</span><span class="s3">(</span><span class="s1">angle</span><span class="s3">)</span>
+
+
+<span class="s2">for </span><span class="s1">shape_side_n </span><span class="s2">in </span><span class="s1">range</span><span class="s3">(</span><span class="s5">3</span><span class="s3">,</span><span class="s5">11</span><span class="s3">):</span>
+    <span class="s1">draw_shape</span><span class="s3">(</span><span class="s1">shape_side_n</span><span class="s3">)</span>
+
+
+
+
+
+
+
+
+
+
+
+<span class="s1">screen </span><span class="s3">= </span><span class="s1">Screen</span><span class="s3">()</span>
+<span class="s1">screen</span><span class="s3">.</span><span class="s1">exitonclick</span><span class="s3">()</span>
+
+
+
+</pre>
+</body>
+</html>
